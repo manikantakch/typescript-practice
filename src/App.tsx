@@ -5,6 +5,7 @@ import ChakraTabs from './components/tabs';
 import {ChakraProvider,Box,Text} from '@chakra-ui/react';
 import { theme } from './thems';
 import AuthorsList from './components/authorsList.tsx';
+import TypesCheck from './typescriptChecks';
 
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
   Quotes App
 </Text> */}
 
-<AuthorsList />
+{/* <AuthorsList /> */}
+
+<TypesCheck/>
 
 
 

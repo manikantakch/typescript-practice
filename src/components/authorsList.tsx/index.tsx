@@ -24,7 +24,10 @@ interface ResponseGenerator {
     results:ResObj[]
    }
 }
+
 const AuthorsList = () => {
+
+
 
     const [data,setData] = useState([])
     const [loading,setLoading] = useState(false)
@@ -32,7 +35,7 @@ const AuthorsList = () => {
    const fetchData = async () => {
     setLoading(true)
 
-await fetch('https://api.quotable.io/authors').then(res => res.json()).then((res) => {
+    await fetch('https://api.quotable.io/authors').then(res => res.json()).then((res) => {
     setLoading(false)
     setData(res.results)
 })
@@ -42,7 +45,7 @@ await fetch('https://api.quotable.io/authors').then(res => res.json()).then((res
    }
 
    useEffect(() => {
-fetchData()
+    fetchData()
 
    },[])
 

@@ -19,11 +19,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    // "noImplicitAny": true,
-    // "strictNullChecks": true,
-    // "compilerOptions": {
-    //   "strictNullChecks": false
-    //   }
+
+     "compilerOptions": {
+   
+       "strict":true
+       }
   },
   "include": [
     "src"
